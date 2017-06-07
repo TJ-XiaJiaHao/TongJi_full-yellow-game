@@ -1,0 +1,36 @@
+/*上下区块*/
+.front-top,.front-bottom{
+    width:100%;
+    background: yellow;
+    position: absolute;
+    left:0;
+}
+/*上半部分*/
+.front-top{
+    height:66.6%;
+    top:-50%;
+    cursor:pointer;
+    z-index: 1000;
+}
+.top-bg{
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+/*下半部分*/
+.front-bottom{
+    height:33.4%;
+    bottom:0;
+}
+/*三角形*/
+.front-tan,.bottom-tan{
+    width:0;
+    height:0;
+    margin:0 auto;
+    border:100px solid #000;
+    border-color:#000 transparent transparent transparent;
+}
+.front-tan{
+    border:100px solid yellow;
+    border-color :yellow transparent transparent transparent;
+}

@@ -1,0 +1,35 @@
+.bar-1,.bar-2,.bar-3{
+    width:200px;
+    height:20px;
+    position: absolute;
+    top:calc(50% - 100px);
+    left:calc(50% - 100px);
+}
+.bar-1{
+    height:0;
+    width:100px;
+    border:20px solid #000;
+    border-color:#000 transparent transparent transparent;
+    left:calc(50% - 106px);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.bar-2{
+    background: #000;
+    width:160px;
+    top:calc(50% - 45px);
+
+}
+.bar-3{
+    top:calc(50% - 55px);
+    left:calc(50% - 91px);
+    background: #000;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

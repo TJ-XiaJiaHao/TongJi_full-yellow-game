@@ -68,6 +68,7 @@ function tapClip() {
     ctx.globalCompositeOperation = "destination-out";
 
     window.addEventListener(tapstart, function funcA(e) {
+        console.log('tapstart');
         clearTimeout(timeout);
         e.preventDefault();
 
@@ -85,6 +86,7 @@ function tapClip() {
 
             //检测擦除状态
             timeout = setTimeout(function () {
+                // console.log('setTimeout(function() {}, 10);');
                 var imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
                 var dd = 0;
                 for (var x = 0; x < imgData.width; x += distance) {
@@ -94,13 +96,13 @@ function tapClip() {
                     }
                 }
                 i ++;
-                console.log(i + dd / (imgData.width * imgData.height / (distance * distance)));
+                console.log(i + 'funC' + dd / (imgData.width * imgData.height / (distance * distance)));
                 if (dd / (imgData.width * imgData.height / (distance * distance)) < 0.001 && flag == true) {
                     // canvas.className = "noOp";
                     flag = false;
                     // window.setTimeout(end,1000); 
                     window.removeEventListener(tapstart, funcA);
-                    // this.removeEventListener(tapmove, tapmoveHandler);
+                    this.removeEventListener(tapmove, tapmoveHandler);
                     this.removeEventListener(tapend, funcC)
                     // end();
 
@@ -108,8 +110,9 @@ function tapClip() {
                         $("#front").html("");
                         $("body").css("opacity","1");
                         backInit();
-                        levelFour();
-
+                        clearTimeout(timeout);
+                        // levelFour();
+                        levelFive();
                     })
 
 

@@ -16,4 +16,5 @@ function backInit(){
     $(".bar6").css("background","rgb(4,4,4)");
     $(".bar7").css("background","rgb(2,2,2)");
     $(".bar8").css("background","rgb(21,21,21)");
+    console.log('backInit');
 }

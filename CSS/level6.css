@@ -1,0 +1,22 @@
+/*中心圆点*/
+.right-round{
+    position: absolute;
+    width:160px;
+    height:160px;
+    top:calc(70% - 100px);
+    left:calc(25% - 100px);
+    background: rgb(191,191,0);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+}
+.right-round-inset{
+    width:140px;
+    height:140px;
+    margin:10px;
+    background: black;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+#levelFive{
+    position: absolute;
+    font-size:150px;
+    color:rgb(191,191,0);
+    top:40%;
+    left:48%;
+    z-index: 1000000;
+}
+
+.backView{
+	width: 100%;
+	height: 100%;
+	background: yellow;
+}
+
+.left-black, .right-grey{
+	width:0;
+    height:0;
+    /*margin:0 auto;*/
+    border-left: 121px solid transparent;
+    border-right: 121px solid transparent;
+    
+    /*border-color:black transparent transparent transparent;*/
+}
+
+.left-black{
+	position: absolute;
+	top: 34.8%;
+	left: 20%;
+	z-index: 1000000;
+	border-bottom: 210px solid black;
+}
+
+.right-black{
+	position: absolute;
+	top: 43%;
+	right: 20%;
+	z-index: 1000000;
+	border-top: 210px solid black;
+}
+
+.left-grey, .right-black{
+	width:0;
+    height:0;
+    border-left: 121px solid transparent;
+    border-right: 121px solid transparent;
+}
+
+.left-grey{
+	-webkit-transform-origin: 50% 33%;
+    -moz-transform-origin: 50% 33%;
+    -o-transform-origin: 50% 33%;
+    -ms-transform-origin: 50% 33%;
+    transform-origin: 50% 33%;
+}
+
+.right-grey{
+	-webkit-transform-origin: 50% 66%;
+    -moz-transform-origin: 50% 66%;
+    -o-transform-origin: 50% 66%;
+    -ms-transform-origin: 50% 66%;
+    transform-origin: 50% 66%;
+}
+
+.left-grey{
+	position: absolute;
+	top: 43%;
+	left: 20%;
+	z-index: 2000000;
+	border-top: 210px solid rgb(191,191,0);
+}
+
+.right-grey{
+	position: absolute;
+	top: 34.8%;
+	right: 20%;
+	z-index: 2000000;
+	border-bottom: 210px solid rgb(191,191,0);
+}

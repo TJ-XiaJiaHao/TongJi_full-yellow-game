@@ -34,3 +34,13 @@
     border:100px solid yellow;
     border-color :yellow transparent transparent transparent;
 }
+
+#levelTwo{
+    position: absolute;
+    font-size:100px;
+    color:yellow;
+    top:60%;
+    left:48%;
+    z-index: 1000000;
+}
+

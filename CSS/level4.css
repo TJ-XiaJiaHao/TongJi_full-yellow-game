@@ -1,12 +1,12 @@
 
-.bar-1,.bar-2,.bar-3{
+.bar-1,.bar-2,.bar-3,.drag-bar{
     width:200px;
     height:20px;
     position: absolute;
     top:calc(50% - 100px);
     left:calc(50% - 100px);
 }
-.bar-1{
+.bar-1,.drag-1{
     height:0;
     width:100px;
     border:20px solid #000;
@@ -17,14 +17,16 @@
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    z-index: 10;
 }
-.bar-2{
+.bar-2,.drag-2{
     background: #000;
     width:160px;
     top:calc(50% - 45px);
+    z-index: 100;
 
 }
-.bar-3{
+.bar-3,.drag-3{
     top:calc(50% - 55px);
     left:calc(50% - 91px);
     background: #000;
@@ -33,4 +35,17 @@
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
+    z-index: 1000;
+}
+
+/*拖拽条*/
+.drag-1{
+    border-color:rgb(191,191,0) transparent transparent transparent;
+    display: none;
+    z-index: 1005;
+}
+.drag-2,.drag-3{
+    background: rgb(191,191,0);
+    display: none;
+    z-index: 1005;
 }

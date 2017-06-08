@@ -6,11 +6,6 @@ function levelThree(){
     $(".bar").css("background","black");
     $("#front").html("<div id='view'><div class='box' id='bb'><canvas id='cas' ></canvas></div></div>");
 
-    // $(".front-top").mousedown(function(e){
-    //     mouseBeginY = e.clientY;
-    //     topBeginY = parseInt($(".front-top").css("top"));
-    //     moveTop();
-    // })
 
      canvas = document.getElementById("cas"), ctx = canvas.getContext("2d");
      x1 = 0, y1 = 0, a = 30, timeout = 0, totimes = 100, distance = 30;
@@ -112,7 +107,7 @@ function tapClip() {
                         backInit();
                         clearTimeout(timeout);
                         // levelFour();
-                        levelFive();
+                        levelFour();
                     })
 
 

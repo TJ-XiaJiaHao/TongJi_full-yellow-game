@@ -41,11 +41,11 @@ function levelSix(){
 
 function endLevelSix(){
     clearInterval(interval);
+    $('.bar').unbind("click");
     $("body").animate({opacity:"0"},1000,function(){
         $("#front").html("");
         $("#front").css("width","100%").css("height","100%").css("margin","0");
         $("body").css("opacity","1");
-        $('.bar').unbind();
         backInit();
         levelOne();
     });

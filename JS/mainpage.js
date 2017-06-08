@@ -5,7 +5,8 @@ $(document).ready(function(){
     document.body.onselectstart = document.body.ondrag = function(){
         return false;
     }
-    levelOne();
+    // levelOne();
+    levelEight();
 });
 function backInit(){
     $(".bar1").css("background","rgb(2,2,2)");

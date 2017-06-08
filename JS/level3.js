@@ -12,11 +12,11 @@ function levelThree(){
     //     moveTop();
     // })
 
-     canvas = document.getElementById("cas"), ctx = canvas.getContext("2d");
-     x1 = 0, y1 = 0, a = 30, timeout = 0, totimes = 100, distance = 30;
-     saveDot = [];
+    canvas = document.getElementById("cas"), ctx = canvas.getContext("2d");
+    x1 = 0, y1 = 0, a = 30, timeout = 0, totimes = 100, distance = 30;
+    saveDot = [];
 
-     canvasBox = document.getElementById("bb");
+    canvasBox = document.getElementById("bb");
 
     canvas.width = canvasBox.clientWidth;
     canvas.height = canvasBox.clientHeight;

@@ -51,14 +51,13 @@ function levelFive(){
 }
 
 function endLevelFive(){
-    console.log(rotateLeft);
-    console.log(rotateRight);
+    $("html").unbind("mousemove");
+    $("html").unbind("mouseup");
+    $(".left-grey").unbind("mousedown");
+    $(".right-grey").unbind("mousedown");
     $("body").animate({opacity:"0"},1000,function(){
         $("#front").html("");
         $("body").css("opacity","1");
-        $(".left-grey").unbind();
-        $(".right-grey").unbind();
-        $("html").unbind();
         backInit();
         levelSix();
     });

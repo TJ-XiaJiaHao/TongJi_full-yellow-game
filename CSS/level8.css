@@ -1,0 +1,42 @@
+.right-rope{
+    position: absolute;
+    width:35px;
+    height:250%;
+    bottom:60%;
+    right:calc(40% - 100px);
+    background: rgb(191,191,0);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50px;
+    z-index: 100000;
+}
+
+.left-rope{
+    position: absolute;
+    width:35px;
+    height:calc(100% + 28px);
+    bottom: -2%;
+    left:calc(40% - 100px);
+    background: rgb(191,191,0);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50px;
+}
+
+.bottom-rect{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 101%;
+    left:0;
+    background: yellow;
+}
+
+#levelEight{
+	position: absolute;
+    width:45px;
+    height:45px;
+    top: 40%;
+    right:calc(40% - 100px);
+    background-image: url("../levelEight.png") ;
+}

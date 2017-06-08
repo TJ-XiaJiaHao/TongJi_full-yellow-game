@@ -1,0 +1,24 @@
+.rubber{
+    background-image: url('../rubber.png');
+    position: absolute;
+    width:200px;
+    height:200px;
+    /*top:50%;*/
+    top:calc(50% - 100px);
+    left:calc(50% - 100px);
+    /*background: rgb(191,191,0);*/
+    /*-webkit-border-radius:50%;*/
+    /*-moz-border-radius:50%;*/
+    /*border-radius:50%;*/
+    z-index: 100000;
+}
+
+.rectange{
+    background:yellow;
+    position: absolute;
+    width:150%;
+    height:100%;
+    /*top:50%;*/
+    top:0;
+    right:100%;
+}

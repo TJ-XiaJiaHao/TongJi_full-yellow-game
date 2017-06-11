@@ -10,36 +10,45 @@ function levelFour(){
     var dragBars = $(".drag-bar");
 
     $("#front").mousedown(function(e){
+        console.log("hi",e.clientX);
+        // e = e || window.event;
         var mouseX = e.clientX;
         var mouseY = e.clientY;
         var moveX = document.body.clientWidth - mouseX;
         var moveY = document.body.clientHeight - mouseY;
         dragBars.eq(currentDrag).css("left",moveX + "px").css("top",moveY + "px");
-        $("#front").mousemove(function(e){
+         $("#front").mousemove(function(e){
+            // console.log("move");
             var mouseX = e.clientX;
             var mouseY = e.clientY;
             var moveX = document.body.clientWidth - mouseX;
             var moveY = document.body.clientHeight - mouseY;
             dragBars.eq(currentDrag).css("display","block").css("left",moveX + "px").css("top",moveY + "px");
             check();
-        })
+        });
         $("#front").mouseup(function(){
+            console.log("up");
             $("#front").unbind("mousemove");
             dragBars.eq(currentDrag).css("display","none");
-        })
-    })
+        });
+    });
+   
 }
 function check(){
-    var basicoffsetX = parseFloat($(".basic-bar").eq(currentDrag).css("left"));
-    var basicoffsetY = parseFloat($(".basic-bar").eq(currentDrag).css("top"));
-    var dragOffsetX = parseFloat($(".drag-bar").eq(currentDrag).css("left"));
-    var dragOffsetY = parseFloat($(".drag-bar").eq(currentDrag).css("top"));
+    console.log($(".bar-1").position().left);
+    // console.log("check");
+    // console.log($(".basic-bar").eq(currentDrag).css("top"));
+    var basicoffsetX = parseFloat($(".basic-bar").eq(currentDrag).position().left);
+    var basicoffsetY = parseFloat($(".basic-bar").eq(currentDrag).position().top);
+    var dragOffsetX = parseFloat($(".drag-bar").eq(currentDrag).position().left);
+    var dragOffsetY = parseFloat($(".drag-bar").eq(currentDrag).position().top);
+    // console.log(dragOffsetX - basicoffsetX);
     if(Math.abs(dragOffsetX - basicoffsetX) < 2 && Math.abs(dragOffsetY - basicoffsetY) < 2){
         $(".drag-bar").eq(currentDrag).css("display","none");
         $(".basic-bar").eq(currentDrag).css("borderColor","yellow").css("background","yellow");
         $("#front").unbind("mousemove");
         currentDrag++;
-        console.log(currentDrag);
+        // console.log(currentDrag);
         if(currentDrag >= $(".basic-bar").length){
             end();
         }

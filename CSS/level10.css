@@ -1,0 +1,113 @@
+.bubble-left{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	left: 20%;
+	top: 20%;
+	/*transform: rotate(30deg);*/
+	background-image: url("../bubble.png");
+}
+
+.bubble-right{
+	position: absolute;
+	width: 430px;
+	height: 430px;
+	right: 17%;
+	bottom: 17%;
+	/*transform: rotate(30deg);*/
+	background-image: url("../bubble3.png");
+	background-size: 430px;
+}
+
+.yL{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	left: 22%;
+	top: 30%;
+	transform: rotate(-10deg);
+	background-image: url("../y.png");
+	background-size: 120px;
+	z-index: 10000;
+}
+
+.oL{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 28%;
+	top: 25%;
+	transform: rotate(-10deg);
+	background-image: url("../o.png");
+	background-size: 150px;
+	z-index: 10000;
+}
+
+.i1L{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 33%;
+	top: 26%;
+	transform: rotate(10deg);
+	background-image: url("../excited.png");
+	background-size: 150px;
+}
+
+.wL{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	right: 36%;
+	bottom: 36%;
+	transform: rotate(-10deg);
+	background-image: url("../w.png");
+	background-size: 150px;
+	z-index: 10000;
+}
+
+.eL{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 32%;
+	bottom: 43%;
+	transform: rotate(-5deg);
+	background-image: url("../e.png");
+	background-size: 80px;
+	z-index: 10000;
+}
+
+.l1L{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 26%;
+	bottom: 40%;
+	transform: rotate(20deg);
+	background-image: url("../l.png");
+	background-size: 80px;
+}
+
+.l2L{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 21%;
+	bottom: 42%;
+	transform: rotate(5deg);
+	background-image: url("../l.png");
+	background-size: 80px;
+	z-index: 10000;
+}
+
+.i2L{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	right: 15%;
+	bottom: 35%;
+	transform: rotate(10deg);
+	background-image: url("../wenhao.png");
+	background-size: 150px;
+}

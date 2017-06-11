@@ -1,6 +1,8 @@
 /**
  * Created by Administrator on 2017/6/6.
  */
+var canvas = null;
+var canvasBox = null;
 function levelThree(){
     $(".current-level").html("3");
     $(".bar").css("background","black");
@@ -106,8 +108,8 @@ function tapClip() {
                         $("body").css("opacity","1");
                         backInit();
                         clearTimeout(timeout);
-                        // levelFour();
                         levelFour();
+                        // levelFive();
                     })
 
 

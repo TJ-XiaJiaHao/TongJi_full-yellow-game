@@ -47,7 +47,7 @@ function endLevelSix(){
         $("#front").css("width","100%").css("height","100%").css("margin","0");
         $("body").css("opacity","1");
         backInit();
-        levelOne();
+        levelSeven();
     });
 }
 

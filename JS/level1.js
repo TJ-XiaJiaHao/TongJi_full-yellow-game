@@ -22,8 +22,8 @@ function levelOne(){
                 $("#front").html("");
                 $("body").css("opacity","1");
                 backInit();
-                // levelTwo();
-                levelSeven();
+                levelTwo();
+                // levelSeven();
             })
         }
     });

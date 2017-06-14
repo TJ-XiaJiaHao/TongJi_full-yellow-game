@@ -5,7 +5,7 @@ $(document).ready(function(){
     document.body.onselectstart = document.body.ondrag = function(){
         return false;
     }
-    levelTen();
+    welcome();
     // levelOne();
 });
 function backInit(){

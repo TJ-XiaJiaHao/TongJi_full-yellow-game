@@ -1,0 +1,18 @@
+.start-tri{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 2000000;
+    border-left: 63px solid yellow;
+    width:0;
+    height:0;
+    border-top: 36px solid transparent;
+    border-bottom: 36px solid transparent;
+}
+
+/*.start-tri{
+    width:0;
+    height:0;
+    border-top: 36px solid transparent;
+    border-bottom: 36px solid transparent;
+}*/

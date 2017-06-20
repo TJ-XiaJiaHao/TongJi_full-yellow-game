@@ -5,7 +5,7 @@ var roundSize = 120;
 var interval = null;
 var settime = 7;
 function levelNine(){
-    $(".current-level").html("2");
+    $(".current-level").html("9");
     $(".bar").css("background","black");
     $("#front").html("<div class='small-middle-round'><div class='black-middle-round'><div class='small-middle-round-inset'></div></div></div>");
 

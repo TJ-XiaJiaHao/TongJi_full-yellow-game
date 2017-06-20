@@ -1,0 +1,72 @@
+.avator{
+	position: absolute;
+	bottom: 2%;
+	left: 40%;
+	width: 300px;
+	height: 200px;
+	background: url("../avator.png");
+}
+
+.first-bubble{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	right: 20%;
+	top: 18%;
+	background-image: url("../bubble.png");
+}
+
+.next-bubble{
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	left: 17%;
+	bottom: 17%;
+	/*transform: rotate(30deg);*/
+	background-image: url("../bubble3.png");
+	/*background-size: 430px;*/
+	display: none;
+}
+
+.first-fake div{
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.next-fake div{
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.first-fake{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	right: 20%;
+	top: 18%;
+}
+
+.next-fake{
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	left: 17%;
+	bottom: 17%;
+	display: none;
+}
+
+.next-fake div{
+	display: none;
+}
+
+#gameOver{
+	position: absolute;
+	display: none;
+	top: 45%;
+	left: 45%;
+}
+
+#congradulations div{
+	font-size: 16pt;
+	display: none;
+}

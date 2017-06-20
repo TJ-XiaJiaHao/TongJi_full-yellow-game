@@ -2,6 +2,7 @@
  * Created by Administrator on 2017/6/2.
  */
 var oldY = 0;
+var preY = 0;
 var rectPos = 60;
 var interval = null;
 
@@ -15,7 +16,9 @@ function levelEight(){
         clearInterval(interval);
         console.log('mouseup');
         oldY = e.clientY;
-        isMove = true;
+        if (preY < oldY)
+            isMove = true;
+        preY = oldY;
     });
     $(".right-rope").mousemove(function(e){
         // clearInterval(interval);
@@ -35,6 +38,7 @@ function levelEight(){
     $(".right-rope").mouseup(function(e){
         rectPos -= (e.clientY-oldY)*0.1;
         oldY = null;
+        preY = 0;
         isMove = false;
         interval = setInterval(function(){
             rectPos += 0.1;

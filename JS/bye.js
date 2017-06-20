@@ -27,16 +27,18 @@ function Bye(){
         <div id='gameOver'>YELLOW</div> \
         <div id='congradulations'> \
         <div>CONGRADULATION</div> \
-        <div>U Have COMPLETED</div> \
+        <div>YOU HAVE COMPLETED</div> \
+        <div>YOU HAVE COMPLETED</div> \
+        <div>YOU HAVE COMPLETED</div> \
         <div>THANKS FOR PLAYING!</div> \
-        <div>I GUESS U KNOW BY NOW</div> \
+        <div>I GUESS YOU KNOW BY NOW</div> \
         <div>WHTAS MY FAVORTITE COLOR ?</div> \
         <div>YES...</div> \
         <div>IT'S</div> \
         <div style='color:red'>RED</div> \
         </div> \
         ");
-    saybye();
+    // saybye();
     $(".first-fake div").click(function(){
         $(".first-fake div").hide();
         $(this).show();
@@ -95,6 +97,7 @@ function endGame(){
                         setTimeout(function(){
                             $("#targetOW").hide();
                             $("#gameOver").show();
+                            saybye();
                         },1000);
                     },1000);
                 },1000);
@@ -102,22 +105,42 @@ function endGame(){
         },1000);
     },1000);
     
-    saybye();
+    
 }
 
 function saybye(){
-    for(var i = 0; i < 8; i ++){
-        $("#congradulations div").eq(i).show();
-        sleep(1000);
-    }
-}
-
-function sleep(numberMillis) { 
-   var now = new Date();
-   var exitTime = now.getTime() + numberMillis;  
-   while (true) { 
-       now = new Date(); 
-       if (now.getTime() > exitTime)    return;
-    }
+    console.log("saybye");
+    setTimeout(function(){
+        $("#congradulations div").eq(0).show();
+        setTimeout(function(){
+            $("#congradulations div").eq(1).show();
+            setTimeout(function(){
+                $("#congradulations div").eq(3).css("opacity","0");
+                $("#congradulations div").eq(2).css("opacity","0");
+                $("#congradulations div").eq(2).show();
+                setTimeout(function(){
+                    $("#congradulations div").eq(3).show();
+                    setTimeout(function(){
+                        $("#congradulations div").eq(4).show();
+                        setTimeout(function(){
+                            $("#congradulations div").eq(5).show();
+                            setTimeout(function(){
+                                $("#congradulations div").eq(6).show();
+                                setTimeout(function(){
+                                    $("#congradulations div").eq(7).show();
+                                    setTimeout(function(){
+                                        $("#congradulations div").eq(8).show();
+                                        setTimeout(function(){
+                                            $("#congradulations div").eq(9).show();
+                                        },1500);
+                                    },1500);
+                                },1500);
+                            },1500);
+                        },1500);
+                    },10);
+                },10);
+            },1500);
+        },1500);
+    },1500);
 }
 

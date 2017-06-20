@@ -7,8 +7,7 @@ var settime = 7;
 function levelNine(){
     $(".current-level").html("9");
     $(".bar").css("background","black");
-    $("#front").html("<div class='small-middle-round'><div class='black-middle-round'><div class='small-middle-round-inset'></div></div></div>");
-
+    $("#front").html("<div class='small-middle-round'><div class='black-middle-round'></div></div><div class='small-middle-round-inset'></div>");
     $(".small-middle-round-inset").on("mousedown", changeB)
     .on("mouseup", clear);
 }
@@ -28,14 +27,12 @@ function clear(){
 	clearInterval(interval);
 	interval = setInterval(function(){
 		roundSize -= 10;
-		// settime -= ;
 		$(".small-middle-round-inset").css("width",roundSize).css("height", roundSize);
 		if(roundSize == 120){
 			clearInterval(interval);
 			settime = 7;
 		}
-		
-	},250);
+	},150);
 }
 
 function changeB(){
@@ -44,14 +41,16 @@ function changeB(){
 		roundSize += 10;
 		settime -= 1;
 		$(".small-middle-round-inset").css("width",roundSize).css("height", roundSize);
+		$(".small-middle-round-inset").css("transform","translate(-50%, -50%)");
 		if(settime == 0){
 			clear();
 			settime = 7;
 		}
-		if(roundSize > 300){
+		if(roundSize > 1667){
 			roundSize = 120;
 			clearInterval(interval);
 			settime = 7;
+			clear();
 	    $("body").animate({opacity:"0"},1000,function(){
 	        $("#front").html("");
 	        $("#front").css("width","100%").css("height","100%").css("margin","0");
@@ -60,7 +59,7 @@ function changeB(){
 	        levelTen();
 	    });
 		}
-	},250);
+	},150);
 }
 
 // function changeS(){

@@ -64,9 +64,24 @@
 	display: none;
 	top: 45%;
 	left: 45%;
+	font-size: 25pt;
+	font-weight: bolder;
 }
 
+#congradulations {
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	left: 33%;
+	top: 38%;
+}
 #congradulations div{
-	font-size: 16pt;
+	/*position: absolute;*/
+	font-size: 17pt;
+	font-weight: bold;
 	display: none;
+	margin-left:  auto;
+	top:40%;
+	left: 45%;
+	text-align: center;
 }
